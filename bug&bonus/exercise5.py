@@ -1,0 +1,8 @@
+new_member = input("Add a new member: ") 
+file = open('exercise5.txt', 'r')
+read_list = file.readlines()
+file.close()
+file = open('exercise5.txt', 'w')
+read_list.append(new_member)
+file.writelines(read_list)
+file.close()
